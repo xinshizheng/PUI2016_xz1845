@@ -12,4 +12,7 @@ An environment variable PUI2016 with an alias of pui2016 has been created for po
 
 The output of using the alias pui2016 can be found as following:
 
-![Screenshot 2 Assignment 2: my succesfull commands using $PUI2016 and the pui2016 alias](Screenshot_2.png) 
+![Screenshot 2 Assignment 2: my succesfull commands using $PUI2016 and the pui2016 alias](Screenshot_2.png)
+
+## Assignment 3:
+See HW1_3_xz1845.ipynb for results. 
