@@ -25,11 +25,11 @@ with open(output_csv, 'w') as csvfile:
     for i in range(number_of_bus):
         latitude = vehicle_activity[i]['MonitoredVehicleJourney']['VehicleLocation']['Latitude']
         longitude = vehicle_activity[i]['MonitoredVehicleJourney']['VehicleLocation']['Longitude']
-        stop_info = vehicle_activity[i]['MonitoredVehicleJourney']['MonitoredCall']
-        stop_name = stop_info['StopPointName']
+        stop_info = vehicle_activity[i]['MonitoredVehicleJourney']['OnwardCall']
+        stop_name = stop_info['OnwardCall'][1]['StopPointName']
         if stop_name == '':
             stop_name = 'N/A'
-        stop_status = stop_info['Extensions']['Distances']['PresentableDistance']
+        stop_status = stop_info['OnwardCall'][1]['Extensions']['Distances']['PresentableDistance']
         if stop_status == '':
             stop_status = 'N/A'
         writer.writerow({'Latitude': latitude, 'Longitude': longitude, 'Stop Name': stop_name, 'Stop Status': stop_status})
