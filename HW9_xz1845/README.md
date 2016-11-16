@@ -1,0 +1,2 @@
+# HW9
+Last week we looked into time series analysis. Three tasks have been completed: event detection, trend analysis and periodicity detection using the NYC MTA swipe data provided. See 'Time Series Analysis.ipynb' for details.
